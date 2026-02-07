@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu+Condensed&display=swap');
 
 * {
     margin: 0;
@@ -8,6 +8,7 @@ body {
     display: flex;
     align-items: space-evenly;
     flex-direction: row;
+    max-height: 100vh;
 }
 
 #left-side {
@@ -49,34 +50,70 @@ body {
     margin: min(18px, 5vh) 5vw;
 }
 
-#right-side p, label, legend {
+#right-side p, label, .form-title {
     color: #fff
 }
 
-#right-side p {
-    font-size: 24px;
+#right-side p, .form-title {
+    font-size: 22px;
 }
 
-p, legend {
+p, .form-title {
     font-family: "Roboto", sans-serif;
-    font-weight: 700    ;
+    font-weight: 500    ;
 }
 
+.form-title {
+    margin-bottom: 2.5vh;
+}
 form {
     background-color: #555;
-    height: 40vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     margin-top: 5vh;
-
+    padding-left: max(2.5vw, 12px);
+    padding-top: 5vh;
 }
 
 .field-row {
     display: flex;
     flex-direction: row;
+    margin: 1vh 0;
 }
 
 .field-container {
     display: flex;
     flex-direction: column  ;
+}
+button {
+    margin: 5vh;
+}
+
+input {
+    background-color: #777;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    color: #eee;
+    padding: 10px;
+
+}
+
+input::placeholder {
+    color: #444;
+}
+
+input:valid {
+    border-color: aquamarine;
+}
+
+input:invalid {
+    border-color: firebrick;
+}
+
+label {
+    font-family: "Bebas Neue";
+    font-size: 20px;
 }
