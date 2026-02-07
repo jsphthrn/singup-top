@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu+Condensed&display=swap');
+
 * {
     margin: 0;
 }
@@ -21,21 +23,60 @@ body {
 .sidebar {
     background-color: rgba(0, 0, 0, 0.6);
     margin-top: max(48px, 10vh);
+    height: max(64px, 15vh);
 }
 
 .sidebar p {
-    font-family: 'Segoe UI Light', 'Open Sans Light', sans-serif;
-    font-size: 48px;
-    color: #fff;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: min(36px, 12.5vh);
+    color: #eee;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 ;
 }
 
 #right-side {
     background-color: #333;
     display: flex;
     flex-direction: column;
-    padding: min(5vh, 10vw);
+    padding: min(10vh, 15vw) 0;
+    justify-content: center; 
+}
+
+#right-side p {
+    margin: min(18px, 5vh) 5vw;
 }
 
 #right-side p, label, legend {
     color: #fff
+}
+
+#right-side p {
+    font-size: 24px;
+}
+
+p, legend {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700    ;
+}
+
+form {
+    background-color: #555;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+
+}
+
+.field-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.field-container {
+    display: flex;
+    flex-direction: column  ;
 }

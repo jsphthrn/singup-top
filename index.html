@@ -18,19 +18,37 @@
         <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.</p>
         <p>You <i>know</i> you want to.</p>
         <form>
-            <fieldset>
-                <legend>Let's do this!</legend>
-                <label for="first-name">First name</label>
-                <input name="first-name" required placeholder="John" />
-                <label for="last-name">Last name</label>
-                <input name="last-name" require placeholder="Doe" />
-                <label for="email-address">Email</label>
-                <input name="email-address" type="email" required placeholder="someone@somewhere.com" />
-                <label for="password">Password</label>
-                <input type="password" name="password" required placeholder="********" />
-                <label for="password-check">Confirm password</label>
-                <input type="password" name="password-check" required />
-            </fieldset>
+            <div class="form-title">Let's do this!</div>
+            <div class="field-row">
+                <div class="field-container">
+                    <label for="first-name">First name</label>
+                    <input name="first-name" required placeholder="John" />
+                </div>
+                <div class="field-container">
+                    <label for="last-name">Last name</label>
+                    <input name="last-name" require placeholder="Doe" />
+                </div>
+            </div>
+            <div class="field-row">
+                <div class="field-container">
+                    <label for="email-address">Email</label>
+                    <input name="email-address" type="email" required placeholder="someone@somewhere.com" />
+                </div>
+                <div class="field-container">
+                    <label for="phone-number">Phone number</label>
+                    <input name="phone-number" minlength="10", maxlength="10">
+                </div>
+            </div>
+            <div class="field-row">
+                <div class="field-container">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" required placeholder="********" />
+                </div>
+                <div class="field-container">
+                    <label for="password-check">Confirm password</label>
+                    <input type="password" name="password-check" required />
+                </div>
+            </div>
         </form>
         <button type="submit">Create Account</button>
         <p>Already have an account? <a href="#">Log In</a></p>
