@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     background: url("./repic_studio-tropical-greens-3809617_1280.jpg");
-    background-repeat: initial;
+    background-repeat: repeat;
     width: max(35vh, 800px);
     height: 100vh;
 }
@@ -63,12 +63,17 @@ p, .form-title {
     font-weight: 500    ;
 }
 
+p {
+    text-align: left;
+}
+
 .form-title {
     margin-bottom: 2.5vh;
 }
+
 form {
     background-color: #555;
-    height: 50vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     margin-top: 5vh;
@@ -113,7 +118,38 @@ input:invalid {
     border-color: firebrick;
 }
 
+input:focus {
+    border-color: blue;
+    box-shadow: 1;
+}
+
 label {
     font-family: "Bebas Neue";
     font-size: 20px;
+}
+
+.left-footer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #eee;
+    text-align: center;
+    padding-bottom: 2.5vh;
+}
+
+.left-footer a {
+    color: #eee;
+}
+
+button {
+    font-size: 18px;
+    background-color: aquamarine;
+    font-weight: 700;
+    font-family: "Ubuntu Condensed", sans-serif;
+    color: #333;
+    padding: 8px;
+    border-radius: 5px;
+    border-style: none;
+    max-width: 20%;
+
 }
